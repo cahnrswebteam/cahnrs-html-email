@@ -1,7 +1,7 @@
 body {
 	background-color: #cccccc;
-    font-family: arial;
-    font-size: 13px;
+	font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+	font-size: 13px;
 }
 img {
 	border: none;
@@ -17,13 +17,15 @@ ul {
 }
 
 p {
+	font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
 	margin-top: 0;
 }
 
 h1,h2,h3,h4,h5 {
 	color: #981e33;
-    padding: 0;
-    margin: 0; 
+  font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  margin: 0;
+	padding: 0;
 }
 h1 {
 	font-size: 24px;
@@ -58,6 +60,11 @@ h5 {
 table.page_title td {
 	padding-bottom: 20px;
 }
+
+.banner-img img {
+	display: block;
+}
+
 .pagebuilder-layout-aside .column-1 { width: 70%; }
 .pagebuilder-layout-aside .column-2 { width: 30%; padding-left: 20px; padding-right: 20px; }
 
@@ -81,8 +88,8 @@ table.page_title td {
 
 /** dark-grey css hook **/
 .row.dark-grey {
-	background-color: #555555;
-    color: #ffffff;
+	background-color: #4e5153;
+	color: #ffffff;
 }
 
 .row.dark-grey h1,
@@ -90,26 +97,29 @@ table.page_title td {
 .row.dark-grey h3,
 .row.dark-grey h4,
 .row.dark-grey h5, {
-    color: #ffffff;
+	color: #ffffff;
 }
 
 .row.dark-grey a {
-    color: #ccccccc;
+	color: #cccccc;
 }
 
-.row.pagebuilder-layout-aside.aside-light-grey .column-2 {
-	background-color: #dddddd;
-}
+.dark-grey-column-1 .column-1 { background-color: #4e5153; }
+.dark-grey-column-2 .column-2 { background-color: #4e5153; }
+.dark-grey-column-3 .column-3 { background-color: #4e5153; }
+.dark-grey-column-4 .column-4 { background-color: #4e5153; }
 
-.no-padding-column-1 .column-1 {
-	padding: 0;
-}
-.no-padding-column-2 .column-2 {
-	padding: 0;
-}
-.no-padding-column-3 .column-3 {
-	padding: 0;
-}
-.no-padding-column-4 .column-4 {
-	padding: 0;
-}
+.light-grey-column-1 .column-1 { background-color: #c0c4c7; }
+.light-grey-column-2 .column-2 { background-color: #c0c4c7; }
+.light-grey-column-3 .column-3 { background-color: #c0c4c7; }
+.light-grey-column-4 .column-4 { background-color: #c0c4c7; }
+
+.tidal-column-1 .column-1 { background-color: #28a1ac; }
+.tidal-column-2 .column-2 { background-color: #28a1ac; }
+.tidal-column-3 .column-3 { background-color: #28a1ac; }
+.tidal-column-4 .column-4 { background-color: #28a1ac; }
+
+.no-padding-column-1 .column-1 { padding: 0; }
+.no-padding-column-2 .column-2 { padding: 0; }
+.no-padding-column-3 .column-3 { padding: 0; }
+.no-padding-column-4 .column-4 { padding: 0; }
