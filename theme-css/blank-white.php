@@ -55,8 +55,25 @@ table.page_title td {
 	padding-bottom: 20px;
 }
 .pagebuilder-layout-aside .column-1 { width: 70%; }
-.pagebuilder-layout-aside .column-2 { width: 30%; padding-left: 20px; padding-right: 20px;}
+.pagebuilder-layout-aside .column-2 { width: 30%; padding-left: 20px; padding-right: 20px; }
 
+.pagebuilder-layout-third-right .column-1 { width: 66%; }
+.pagebuilder-layout-third-right .column-2 { width: 34%; }
+
+.pagebuilder-layout-third-left .column-1 { width: 34%; }
+.pagebuilder-layout-third-left .column-2 { width: 66%; }
+
+.pagebuilder-layout-half .column-1 { width: 50%; }
+.pagebuilder-layout-half .column-2 { width: 50%; }
+
+.pagebuilder-layout-thirds .column-1 { width: 33%; }
+.pagebuilder-layout-thirds .column-2 { width: 34%; }
+.pagebuilder-layout-thirds .column-3 { width: 33%; }
+
+.pagebuilder-layout-fourths .column-1 { width: 25%; }
+.pagebuilder-layout-fourths .column-2 { width: 25%; }
+.pagebuilder-layout-fourths .column-3 { width: 25%; }
+.pagebuilder-layout-fourths .column-3 { width: 25%; }
 
 /** dark-grey css hook **/
 .row.dark-grey {
@@ -78,4 +95,17 @@ table.page_title td {
 
 .row.pagebuilder-layout-aside.aside-light-grey .column-2 {
 	background-color: #dddddd;
+}
+
+.no-padding-column-1 .column-1 {
+	padding: 0;
+}
+.no-padding-column-2 .column-2 {
+	padding: 0;
+}
+.no-padding-column-3 .column-3 {
+	padding: 0;
+}
+.no-padding-column-4 .column-4 {
+	padding: 0;
 }
