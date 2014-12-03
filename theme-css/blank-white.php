@@ -16,6 +16,10 @@ ul {
 	padding-left: 25px;
 }
 
+p {
+	margin-top: 0;
+}
+
 h1,h2,h3,h4,h5 {
 	color: #981e33;
     padding: 0;
