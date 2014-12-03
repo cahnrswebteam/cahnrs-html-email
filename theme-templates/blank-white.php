@@ -3,7 +3,7 @@
     <tr><td align="center" style="padding-bottom: 10px;"><a href="<?php echo get_permalink( );?>">View In Browser</a></td></tr>
 	<tr>
 		<td>
-        	<table bgcolor="#fffffff" class="email-wrapper" border="0" cellpadding="0" cellspacing="0" width="750" style="border-collapse:collapse" align="center">
+        	<table bgcolor="#ffffff" class="email-wrapper" border="0" cellpadding="0" cellspacing="0" width="750" style="border-collapse:collapse" align="center">
             	<?php if( $CAHNRSWP_email->model->banner_img ):?>
             	<tr>
                 	<td class="email-content">
