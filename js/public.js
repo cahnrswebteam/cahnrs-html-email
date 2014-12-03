@@ -30,16 +30,15 @@ jQuery(document).ready( function($){
 									
 									c_css = s.rgb2hex( c_css );
 									
-									console.log( c_css );
 									
 									$( this ).css( css[r] , c_css );
 									
 								}
 								
 							} else {
-							//if( 'background-color' == css[r] && 'rgba(0, 0, 0, 0)' == c_css ) continue; 
-							//if( 'background-color' == css[r] && 'transparent' == c_css ) continue; 
+								 
 								$( this ).css( css[r] , c_css );
+								
 							}
 						}
 					});
