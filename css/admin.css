@@ -1,0 +1,96 @@
+#email-settings {
+	margin-bottom: 2rem;
+}
+#email-settings .inside > div {
+	margin: 0 0 2rem;
+}
+#email-settings h3 {
+	margin: 1rem 0 0.5rem;
+}
+#email-settings h3 span {
+	display: none;
+}
+
+#email-settings input[type=text] {
+	padding: 3px 8px;
+	font-size: 1.3em;
+	line-height: 100%;
+	height: 1.7em;
+	outline: 0;
+	margin: 0;
+	background-color: #fff; 
+}
+#email-settings label {
+	padding: 3px 8px;
+	font-size: 1.1em;
+	line-height: 100%;
+	height: 1.7em;
+	outline: 0;
+	margin: 0;
+	background-color: #fff; 
+}
+#email-settings input.full {
+	width: 100%;
+}
+#email-setting-theme {
+	width: 100%;
+}
+#email-theme-settings img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+#email-theme-settings .email-setting-nav {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 100%;
+	background: rgba( 0, 0 , 0, 1 ) url(../images/arrow-prev.png) no-repeat center center;
+	z-index: 500;
+	text-decoration: none;
+	color: #fff;
+}
+#email-theme-settings #email-slide-wrap {
+	position: relative;
+	border: 1px solid #999;
+	overflow: hidden;
+}
+#email-theme-settings .cycle-slideshow {
+	margin: 0 40px;
+}
+
+#email-theme-settings #email-setting-next {
+	right: 0;
+	left: auto;
+	background: rgba( 0, 0 , 0, 1 ) url(../images/arrow-next.png) no-repeat center center;
+}
+#email-theme-settings .email-theme input {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+}
+
+#email-theme-settings .email-theme {
+	width: 20%;
+	display: inline-block;
+	position: relative !important;;
+	cursor: pointer;
+	opacity: 0.5;
+}
+#email-theme-settings .email-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 0.25rem 0;
+	background: rgba( 0,0,0,0.6 );
+	color: #fff;
+	font-size: 0.8rem;
+	text-indent: 1rem;
+	font-weight: bold;
+}
+#email-theme-settings .email-theme-active .email-caption {
+	background: #981e33;
+}

@@ -1,0 +1,64 @@
+/**
+ * Theme Name:  CAHNRS HTML Email
+ * Theme URI:   http://cahnrs.wsu.edu/communications/
+ * Author:      CAHNRS Communications, Danial Bleile, Phil Cable
+ * Author URI:  http://cahnrs.wsu.edu/communications/
+ * Description: 
+ * Version:     0.0.1
+ * License:     Copyright Washington State University
+ * License      URI: http://copyright.wsu.edu
+ */
+ body {
+	 margin: 0;
+	 padding: 0;
+ }
+
+#email-admin-bar {
+	background: #222;
+	border-top: 1px solid #666;
+	position: relative;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#email-admin-bar label {
+	height: 50px;
+	line-height: 50px;
+	color: #ccc;
+	font-size: 1.4rem;
+	margin-left: 2rem;
+}
+
+#email-admin-bar input {
+	height: 30px;
+	font-size: 1.2rem;
+	padding: 0 1rem;
+	outline: 0;
+	margin: 10px 0.5rem;
+	border-radius: 4px;
+	border: none;
+	color: #555;
+}
+#email-admin-bar nav {
+	position: absolute;
+	top: 0;
+	right: 2rem;
+	border-right: 1px solid #555;
+}
+#email-admin-bar nav a {
+	display: inline-block;
+	vertical-align: top;
+	color: #ccc;
+	font-size: 1.4rem;
+	height: 50px;
+	line-height: 50px;
+	text-decoration: none;
+	padding: 0 1rem;
+	border-left: 1px solid #555;
+	border-right: 1px solid #000;
+}
+#email-admin-bar nav a:hover {
+	background: #444;
+}
+#email-code {
+	display: none;
+}
