@@ -16,8 +16,54 @@ jQuery(document).ready( function($){
 				for( var i = 0; i < tags.length; i++ ){
 					$( tags[i] ).each( function(){
 						for( var r = 0; r < css.length; r++ ){
-							var c_css = $(this).css( css[r] );   
-							if( 'color' == css[r] ) {
+							
+							var c_css = $(this).css( css[r] ); 
+							  
+							switch( css[r] ){
+								
+								case 'color':
+								
+									c_css = s.rgb2hex( c_css );
+									
+									var style = $(this).attr('style');
+									
+									console.log( c_css );
+									
+									$(this).attr('style', css[r]+':'+c_css+';'+style );
+									
+									break;
+								
+								case 'background-color':
+								
+									if( c_css.indexOf( 'rgba' ) < 0 && 'transparent' != c_css ) {
+									
+										c_css = s.rgb2hex( c_css );
+										
+										$( this ).attr( 'bgcolor' , c_css ) ;
+									
+									}
+									
+									break;
+								case 'font-size':
+									
+									//var base_size = $('body').css('font-size').replace( 'px' , '' );
+									
+									//var c_size = c_css.replace( 'px' , '' )
+									
+									//c_css = ( ( c_size / base_size ) * 100 ) + '%';
+									
+									$( this ).css( css[r] , c_css );
+									
+									break;
+									
+								default: 
+								
+									$( this ).css( css[r] , c_css );
+									
+									break;
+									
+							}
+							/*if( 'color' == css[r] ) {
 								c_css = s.rgb2hex( c_css );
 								var style = $(this).attr('style');
 								
@@ -39,7 +85,7 @@ jQuery(document).ready( function($){
 								 
 								$( this ).css( css[r] , c_css );
 								
-							}
+							}*/
 						}
 					});
 				}
@@ -61,6 +107,16 @@ jQuery(document).ready( function($){
 					var n_width = ( ( width / row_width ) * 100 ).toFixed(2);
 					$( this ).css( 'width' , n_width + '%' );
 				});
+			}
+			
+			c.set_item_width = function(){
+				
+				$('.item').each( function(){
+					
+					$( this ).css( 'width' , '100%' );
+					
+				});
+				
 			}
 			
 			c.fix_img_align = function(){
@@ -102,6 +158,7 @@ jQuery(document).ready( function($){
 			c.inilne_css();
 			c.set_column_width();
 			c.set_row_width();
+			c.set_item_width();
 			c.fix_img_align();
 			c.set_img_size();
 		}

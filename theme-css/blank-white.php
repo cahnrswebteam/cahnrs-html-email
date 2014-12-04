@@ -1,6 +1,6 @@
 body {
 	background-color: #cccccc;
-	font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
+	font-family: Verdana,sans-serif;
 	font-size: 13px;
 }
 img {
@@ -10,6 +10,7 @@ img {
 
 a {
 	color: #981e33;
+    text-decoration: none;
 }
 
 ul {
@@ -17,13 +18,13 @@ ul {
 }
 
 p {
-	font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
+	font-family: Verdana,sans-serif;
 	margin-top: 0;
 }
 
 h1,h2,h3,h4,h5 {
 	color: #981e33;
-  font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif;
+  font-family: Verdana,sans-serif;
   margin: 0;
 	padding: 0;
 }
@@ -44,10 +45,10 @@ h5 {
 }
 
 .column {
-	padding-top: 20px;
+	/*padding-top: 20px;*/
 	padding-left: 30px;
 	padding-right: 30px;
-	padding-bottom: 20px;
+	/*padding-bottom: 20px;*/
 }
 .row {
 	background-color: #ffffff;
@@ -55,6 +56,11 @@ h5 {
 }
 .row .item {
 	width: 100%;
+    padding-top: 20px;
+}
+.row .item td{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 table.page_title td {
@@ -87,7 +93,8 @@ table.page_title td {
 .pagebuilder-layout-fourths .column-3 { width: 25%; }
 
 /** dark-grey css hook **/
-.row.dark-grey {
+.row.dark-grey,
+.row.dark-grey td.column  {
 	background-color: #4e5153;
 	color: #ffffff;
 }
@@ -96,7 +103,7 @@ table.page_title td {
 .row.dark-grey h2,
 .row.dark-grey h3,
 .row.dark-grey h4,
-.row.dark-grey h5, {
+.row.dark-grey h5 {
 	color: #ffffff;
 }
 
@@ -119,7 +126,31 @@ table.page_title td {
 .tidal-column-3 .column-3 { background-color: #28a1ac; color: #ffffff; }
 .tidal-column-4 .column-4 { background-color: #28a1ac; color: #ffffff; }
 
-.no-padding-column-1 .column-1 { padding: 0; }
-.no-padding-column-2 .column-2 { padding: 0; }
-.no-padding-column-3 .column-3 { padding: 0; }
-.no-padding-column-4 .column-4 { padding: 0; }
+.no-padding-column-1 .column-1,
+.no-padding-column-1 .column-1 .item td { 
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0; 
+    }
+.no-padding-column-2 .column-2,
+.no-padding-column-2 .column-2 .item td { 
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0; 
+    }
+.no-padding-column-3 .column-3,
+.no-padding-column-3 .column-3 .item td { 
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0; 
+    }
+.no-padding-column-4 .column-4,
+.no-padding-column-4 .column-4 .item td { 
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0; 
+    }
