@@ -8,6 +8,66 @@ jQuery(document).ready( function($){
 		s.configure_email = function(){
 			var c = this;
 			
+			c.encode_campaign = function( text ){
+				
+				console.log( text );
+				
+				text = text.replace( / /g , '-' );
+				text = text.replace( /\%20/g , '-' );
+				text = text.replace( /\'/g , '' );
+				text = text.replace( /\"/g , '' );
+				text = text.toLowerCase();
+				text = encodeURIComponent( text );
+				
+				return text;
+				
+			}
+			
+			c.add_tracking = function(){
+				var campaign = ( typeof cahnrs_campaign !== 'undefined' )? cahnrs_campaign : 'cahnrs-campaign';
+				var source = ( typeof cahnrs_source !== 'undefined' )? cahnrs_source : campagin;
+				var medium = 'email';
+				
+				$( 'a' ).each( function( index ){
+					
+					var href = $( this ).attr('href');
+					
+					
+					if( ( 'undefined' !== href || '#' != href ) && href.indexOf('utm_campaign') == -1 ){
+						
+						
+						if( href.indexOf('wsu.edu') > -1 ){
+							
+							var date = new Date();
+							
+							var query = new Array();
+							query.push( 'utm_campaign=' + c.encode_campaign( campaign ) );
+							query.push( 'utm_source=' + c.encode_campaign( source + '-' + date.getFullYear() + '-' + date.getDate() ) );
+							query.push( 'utm_medium=' + c.encode_campaign( medium ) );
+							query.push( 'utm_content=link-' +  index ); 
+							
+							var url = href.split('?');
+							
+							if( url.length > 1 ){
+								
+								$( this ).attr('href' , url[0] + '?' + url[1] + '&' + query.join('&') )
+								
+							} else {
+								
+								$( this ).attr('href' , url[0] + '?' + query.join('&') )
+								
+							}
+							
+							$( this ).attr( 'data-linkid' , 'link-' + index );
+							
+						} // end if
+						
+					} // end if 
+					
+				}); // end each
+				
+			}
+			
 			c.inilne_css = function(){
 				var tags = 'tr,td,h1,h2,h3,h4,h5,tr,td,table,p,ul,li';
 				tags = tags.split(',');
@@ -27,7 +87,6 @@ jQuery(document).ready( function($){
 									
 									var style = $(this).attr('style');
 									
-									console.log( c_css );
 									
 									$(this).attr('style', css[r]+':'+c_css+';'+style );
 									
@@ -154,7 +213,7 @@ jQuery(document).ready( function($){
 			});
 		}
 			
-			
+			c.add_tracking();
 			c.inilne_css();
 			c.set_column_width();
 			c.set_row_width();
@@ -174,7 +233,8 @@ jQuery(document).ready( function($){
 		
 		s.load_code = function(){
 			var email = $('#email-content').html();
-			$('#email-code').val( email );
+			$('#email-code').html( email );
+			//$('#email-code').html( email );
 		}
 		
 		s.configure_email();

@@ -62,3 +62,15 @@
 #email-code {
 	display: none;
 }
+.ui-dialog #email-header,
+.ui-dialog #email-code,
+.ui-dialog #email-footer {
+	display: block;
+	width: 100%;
+	min-height: 100px;
+	font-size: 10px;
+}
+
+.ui-dialog #email-code{
+	min-height: 300px;
+}
