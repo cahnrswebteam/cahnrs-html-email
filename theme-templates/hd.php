@@ -7,7 +7,7 @@
         </td>
       </tr>
       <tr>
-        <td class="full-width">
+        <td class="full-width" style="font-family:'Lucida Grande','Lucida Sans Unicode',Arial,san-serif;">
 					<?php
 						if ( have_posts() ) :
 							while ( have_posts() ) :
@@ -18,41 +18,6 @@
 							endwhile;
 						endif;
 					?>
-					<!--<table width="700" border="0" cellspacing="0" cellpadding="0" class="full-width" style="border-collapse:collapse; width:700px;">
-            <tr>
-              <td align="left" valign="top" width="516" class="column" style="font-family:'Lucida Grande','Lucida Sans Unicode',Arial,san-serif; font-size:14px; padding-top:10px; padding-right:15px; padding-bottom:15px; padding-left:15px; text-align:left; vertical-align:top; width:516px;">
-								content
-              </td>
-              <td bgcolor="#d7dadb" align="left" valign="top" width="154" class="column full-width" style="background:#d7dadb; padding:0; text-align:left; vertical-align:top; width:154px;">
-                <table width="154" border="0" cellspacing="0" cellpadding="0" class="full-width" style="border-collapse:collapse; width:154px;">
-                  <tr>
-                    <td bgcolor="#5e6a71" width="130" class="column" style="background:#5e6a71; border-bottom:1px solid #ffffff; color:#ffffff; font-family:'Lucida Grande','Lucida Sans Unicode',Arial,san-serif; font-size:14px; padding-top:12px; padding-right:12px; padding-bottom:20px; padding-left:12px; width: 131px;">
-                      <h2 style="color:#000; font-size:16px; font-weight:normal; margin:0 0 12px; text-transform:uppercase;">Faculty</h2>
-											News<br /><br />Grants<br /><br />Publications<br />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td bgcolor="#8d959a" width="130" class="column" style="background:#8d959a; border-bottom:1px solid #ffffff; color:#ffffff; font-family:'Lucida Grande','Lucida Sans Unicode',Arial,san-serif; font-size:14px; padding-top:12px; padding-right:12px; padding-bottom:20px; padding-left:12px; width: 131px;">
-											<h2 style="color:#000; font-size:16px; font-weight:normal; margin:0 0 12px; text-transform:uppercase;">Support</h2>
-											Donors<br />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td bgcolor="#b5babe" width="130" class="column" style="background:#b5babe; border-bottom:1px solid #ffffff; color:#ffffff; font-family:'Lucida Grande','Lucida Sans Unicode',Arial,san-serif; font-size:14px; padding-top:12px; padding-right:12px; padding-bottom:20px; padding-left:12px; width: 131px;">
-                      <h2 style="color:#000; font-size:16px; font-weight:normal; margin:0 0 12px; text-transform:uppercase;">Graduates</h2>
-											May 2014<br /><br />August 2015<br />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td width="130" class="column" style="color:#5e6a71; font-family:'Lucida Grande','Lucida Sans Unicode',Arial,san-serif; font-size:14px; padding-top:12px; padding-right:12px; padding-bottom:20px; padding-left:12px; width: 131px;">
-                     	<h2 style="color:#000; font-size:16px; font-weight:normal; margin:0 0 12px; text-transform:uppercase;">Calendar</h2>
-                      Oct. 3 - Alumni Event<br /><br />Oct. 10 - Open House<br /><br />Oct. 31 - Trick or Treat<br />
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>-->
         </td>
       </tr>
       <tr>
