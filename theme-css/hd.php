@@ -67,7 +67,13 @@ p {
 .column-2 table:nth-of-type(4) strong {
 	color: #981e32;
 }
-
+img {
+	max-width: 100%;
+}
+img.alignleft {
+	margin: 0 15px 0 0;
+}
+.column-1 td br:first-of-type,
 table#row-200 {
 	display: none;
 }
