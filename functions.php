@@ -137,6 +137,7 @@ class email_model{
 		'blank-white' => array('name' => 'Blank White' , 'supports' => array( 'banner' ) ),
 		'cahnrs-news' => array('name' => 'CAHNRS News' ),
 		'hd' => array( 'name' => 'HD Newsletter', 'css' => 'hd' ),
+		'votv' => array( 'name' => 'Voice of the Vine', 'css' => 'votv' ),
 		'empty1' => array( 'name' => 'Not Set' ),
 		'empty2' => array( 'name' => 'Not Set' ),
 	);
