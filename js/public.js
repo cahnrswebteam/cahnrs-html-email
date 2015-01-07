@@ -32,41 +32,44 @@ jQuery(document).ready( function($){
 					
 					var href = $( this ).attr('href');
 					
+					if( typeof href !== 'undefined' ) {
 					
-					if( ( 'undefined' !== href || '#' != href ) && href.indexOf('utm_campaign') == -1 ){
+						if( '#' != href && href.indexOf('utm_campaign') == -1 && href.indexOf('mailto:') == -1 ){
+							
+							
+							if( href.indexOf('wsu.edu') > -1 ){
+								
+								var date = new Date();
+								
+								var query = new Array();
+								query.push( 'utm_campaign=' + c.encode_campaign( campaign ) );
+								query.push( 'utm_source=' + c.encode_campaign( source + '-' + date.getFullYear() + '-' + date.getDate() ) );
+								query.push( 'utm_medium=' + c.encode_campaign( medium ) );
+								query.push( 'utm_content=link-' +  index ); 
+								
+								var url = href.split('?');
+								
+								if( url.length > 1 ){
+									
+									$( this ).attr('href' , url[0] + '?' + url[1] + '&' + query.join('&') )
+									
+								} else {
+									
+									$( this ).attr('href' , url[0] + '?' + query.join('&') )
+									
+								}
+								
+								$( this ).attr( 'data-linkid' , 'link-' + index );
+								
+							}; // end if
+							
+						}; // end if 
 						
-						
-						if( href.indexOf('wsu.edu') > -1 ){
-							
-							var date = new Date();
-							
-							var query = new Array();
-							query.push( 'utm_campaign=' + c.encode_campaign( campaign ) );
-							query.push( 'utm_source=' + c.encode_campaign( source + '-' + date.getFullYear() + '-' + date.getDate() ) );
-							query.push( 'utm_medium=' + c.encode_campaign( medium ) );
-							query.push( 'utm_content=link-' +  index ); 
-							
-							var url = href.split('?');
-							
-							if( url.length > 1 ){
-								
-								$( this ).attr('href' , url[0] + '?' + url[1] + '&' + query.join('&') )
-								
-							} else {
-								
-								$( this ).attr('href' , url[0] + '?' + query.join('&') )
-								
-							}
-							
-							$( this ).attr( 'data-linkid' , 'link-' + index );
-							
-						} // end if
-						
-					} // end if 
+					}; // end if typeof
 					
 				}); // end each
 				
-			}
+			};
 			
 			c.inilne_css = function(){
 				var tags = 'tr,td,h1,h2,h3,h4,h5,tr,td,table,p,ul,li';

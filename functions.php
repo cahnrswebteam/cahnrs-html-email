@@ -94,7 +94,7 @@ class init_html_email{
 	public function add_public_scripts(){
 		\wp_enqueue_style( 'style', \get_stylesheet_directory_uri().'/style.css', array(), '0.0.1'  );
 		\wp_enqueue_style( 'jQuery-ui-style', '//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css', array(), '0.0.1'  );
-		\wp_enqueue_script( 'email-js', \get_stylesheet_directory_uri().'/js/public.js', array(), '0.0.1'  );
+		\wp_enqueue_script( 'email-js', \get_stylesheet_directory_uri().'/js/public.js', array(), '0.0.2'  );
 		\wp_enqueue_script( 'jQuery-ui', '//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js', array(), '0.0.1'  );
 	}
 
