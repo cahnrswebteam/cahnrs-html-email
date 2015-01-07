@@ -4,7 +4,7 @@
 			<table align="center" border="0" cellspacing="0" cellpadding="0" height="190" width="750" class="full-width" style="width:750px;">
 				<tr>
 					<td height="190" valign="top" width="542" class="header full-width" style="color:#fff; vertical-align:top; width:542px;">
-						<span id="cahnrs-logo" style="font-size:10px;"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/cahnrs-logo.png" width="319" height="75" alt="College of Agricultural, Human, and Natural Resource Sciences" style="height: 75px; max-width: 480px; width:319px;" /></span>
+						<span id="cahnrs-logo" style="font-size:10px;"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/ve-logo.png" width="319" height="75" alt="College of Agricultural, Human, and Natural Resource Sciences" style="height: 75px; max-width: 480px; width:319px;" /></span>
 						<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/votv-header.png" width="542" height="115" alt="Voice of the Vine" style="font-size:24px; height:115px; width:542px;" />
 					</td>
 					<td bgcolor="#363637" height="190" valign="top" width="208" class="full-width" style="background-color:#363637; vertical-align:top; width:208px;">
@@ -12,11 +12,8 @@
 							<table bgcolor="#b11730" border="0" cellspacing="0" cellpadding="0" height="170" width="100%" class="height-fix" style="background:#b11730; color:#fff; height:170px; width:100%;">
 								<tr>
 									<td align="center" id="social" style="padding:20px 20px 10px 20px; text-align:center;">
-										<a href="http://twitter.com/wsucahnrs" title="Follow us on Twitter"><img align="center" src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/votv-social-twitter.png" width="22" height="22" alt="Twitter" style="height:22px; height:22px; max-width:30px; width:22px; width:22px;" /></a>
-										<a href="http://www.facebook.com/CAHNRS" title="Follow us on Facebook"><img align="center" src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/votv-social-facebook.png" width="22" height="22" alt="Facebook" style="height:22px; max-width:30px; width:22px;" /></a>
-										<a href="#" title="Follow us on Google +"><img align="center" src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/votv-social-google.png" width="22" height="22" alt="Google +" style="height:22px; max-width:30px; width:22px;" /></a>
-										<a href="http://www.youtube.com/WSUCAHNRS" title="Visit our YouTube channel"><img align="center" src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/votv-social-youtube.png" width="22" height="22" alt="YouTube" style="height:22px; max-width:30px; width:22px;" /></a>
-										<a href="http://cahnrs.wsu.edu/blog/category/voice-of-the-vine/feed" title="Subscribe to our RSS feed"><img align="center" src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/votv-social-rss.png" width="22" height="22" alt="RSS" style="height:22px; max-width:30px; width:22px;" /></a>
+										<a href="https://www.facebook.com/wine.wsu.edu" title="Follow us on Facebook"><img align="center" src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/newsletter-social-facebook.png" width="35" height="35" alt="Facebook" style="height:35px; max-width:35px; width:35px;" /></a>
+										<a href="http://cahnrs.wsu.edu/blog/category/voice-of-the-vine/feed" title="Subscribe to our RSS feed"><img align="center" src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/newsletter-social-rss.png" width="35" height="35" alt="RSS" style="height:35px; max-width:35px; width:35px;" /></a>
 									</td>
 								</tr>
 								<tr>
@@ -52,7 +49,7 @@
 	</tr>
 	<tr>
 		<td bgcolor="#363637" width="100%" class="full-width" id="footer" style="background-color:#363637; font-size:13px; padding:10px 0 20px; text-align:center; width:100%;">
-			<span style="color:#fff; margin-bottom:10px;">If you have comments or questions about a story, please <a href="#" style="color:#fff;">contact us</a>. Thank you for reading <a href="http://cahnrs.wsu.edu/blog/category/voice-of-the-vine/" style="border-bottom:none; color:#b11730; text-decoration:none;">Voice of the Vine</a>.</span>
+			<span style="color:#fff; margin-bottom:10px;">If you have comments or questions about a story, please <a href="mailto:erika.holmes@wsu.edu" style="color:#fff;">contact us</a>. Thank you for reading <a href="http://cahnrs.wsu.edu/blog/category/voice-of-the-vine/" style="border-bottom:none; color:#b11730; text-decoration:none;">Voice of the Vine</a>.</span>
 			<span style="color:#b11730; margin-bottom: 3px;">CAHNRS Communications, Washington State University, Pullman, WA</span>
 			<span id="global-links" style="color:#b5babe;"><a href="http://access.wsu.edu/">Accessibility</a> | <a href="http://copyright.wsu.edu/">Copyright</a> | <a href="http://policies.wsu.edu/">Policies</a></span>
 		</td>

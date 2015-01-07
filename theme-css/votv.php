@@ -9,7 +9,7 @@ body {
 #social a {
 	color: #fff;
 	float: left;
-	width: 20%;
+	width: 50%;
 	text-align: center;
 }
 #social img {
@@ -67,13 +67,15 @@ h1 {
 	color: #5e6a71;
 	font-size: 20px;
 }
-h2 {
+h2,
+.cwp-promo h4 {
 	color: #981e32;
 	font-size: 18px;
 	font-weight: normal;
 	text-transform: uppercase;
 }
-h2 a {
+h2 a,
+.cwp-promo h4 a {
 	color: #981e32;
 	text-decoration: none;
 }
