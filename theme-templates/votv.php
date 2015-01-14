@@ -1,7 +1,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="full-width" style="border-collapse:collapse; font-family:'Lucida Grande','Lucida Sans Unicode',Arial,san-serif; width:100%;">
 	<tr>
 		<td bgcolor="#363637" height="190" width="100%" class="full-width" style="background-color:#363637; height:190px; width:100%;">
-			<table align="center" border="0" cellspacing="0" cellpadding="0" height="190" width="750" class="full-width" style="width:750px;">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" width="750" class="full-width" style="width:750px;">
 				<tr>
 					<td height="190" valign="top" width="542" class="header full-width" style="color:#fff; vertical-align:top; width:542px;">
 						<span id="cahnrs-logo" style="font-size:10px;"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/ve-logo.png" width="319" height="75" alt="College of Agricultural, Human, and Natural Resource Sciences" style="height: 75px; max-width: 480px; width:319px;" /></span>
@@ -9,7 +9,7 @@
 					</td>
 					<td bgcolor="#363637" height="190" valign="top" width="208" class="full-width" style="background-color:#363637; vertical-align:top; width:208px;">
 						<div style="margin: 0 20px 20px 20px;">
-							<table bgcolor="#b11730" border="0" cellspacing="0" cellpadding="0" height="170" width="100%" class="height-fix" style="background:#b11730; color:#fff; height:170px; width:100%;">
+							<table bgcolor="#b11730" border="0" cellspacing="0" cellpadding="0" width="100%" class="height-fix" style="background:#b11730; color:#fff; height:170px; width:100%;">
 								<tr>
 									<td align="center" id="social" style="padding:20px 20px 10px 20px; text-align:center;">
 										<a href="https://www.facebook.com/wine.wsu.edu" title="Follow us on Facebook"><img align="center" src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/newsletter-social-facebook.png" width="35" height="35" alt="Facebook" style="height:35px; max-width:35px; width:35px;" /></a>
