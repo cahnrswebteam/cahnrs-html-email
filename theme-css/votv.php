@@ -55,6 +55,9 @@ img {
 	padding: 0 20px 0 20px;
 }
 .column-1 .content {
+	padding: 0 15px 0 20px;
+}
+.column-1 .content.has-image {
 	padding: 0 15px 0 0;
 }
 .column-1 .read-more {
