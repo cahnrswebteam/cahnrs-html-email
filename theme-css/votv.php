@@ -44,13 +44,35 @@ img {
 	margin-bottom: 20px;
 	width: 750px;
 }
-.column-1 table {
+
+.column-1 {
 	border-right: 1px solid #b5babe;
+}
+.column-1 > table {
 	width: 543px;
 }
-.column-1 table td {
-	padding: 0 15px 0 20px;
+.column-1 .image {
+	padding: 0 20px 0 20px;
 }
+.column-1 .content {
+	padding: 0 15px 0 0;
+}
+.column-1 .read-more {
+	padding: 0 15px 20px 20px;
+}
+.column-1 .read-more span {
+	border-bottom: 1px solid #bec2c5;
+	display: block;
+}
+.column-1 .read-more a {
+	background: #363637;
+	color: #bec2c5;
+	display: inline-block;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+
 .column-2 table {
 	width: 207px;
 }
@@ -68,14 +90,14 @@ h1 {
 	font-size: 20px;
 }
 h2,
-.cwp-promo h4 {
+.column-1 h3 {
 	color: #981e32;
 	font-size: 18px;
 	font-weight: normal;
 	text-transform: uppercase;
 }
 h2 a,
-.cwp-promo h4 a {
+.column-1 h3 a {
 	color: #981e32;
 	text-decoration: none;
 }
@@ -84,27 +106,7 @@ h3 {
 }
 h4 {
 	color: #981e32;
-  font-size: 15px;
-}
-
-.column-1 img {
-	height: auto;
-  margin: 0 15px 15px 0;
-  width: 240px;
-}
-
-.more {
-  border-bottom: 1px solid #bec2c5;
-  clear: both;
-  margin-bottom: 1.5em;
-  text-align: right;
-}
-.more a {
-	background: #363637;
-  color: #bec2c5;
-  display: inline-block;
-  padding: 5px 10px;
-  text-decoration: none;
+	font-size: 15px;
 }
 
 #row-200 {
@@ -124,10 +126,13 @@ h4 {
 		display: block;
 		margin: 0 20px;
 	}
+	.column-1 {
+		border-right: none;
+	}
 	.full-width,
 	.column,
-  .column-1 table,
-  .column-2 table {
+	.column-1 table,
+	.column-2 table {
 		display: block;
 		height: auto !important;
 		width: 100% !important;
@@ -138,13 +143,25 @@ h4 {
 	.shadow {
 		display: none;
 	}
-  .column-1 table {
-		border-right: none;
+	.column-1 .image,
+	.column-1 .content,
+	.column-1 .read-more {
+		display: block;
+		height: auto !important;
+		padding: 0 15px 0 15px;
+		width: auto !important;
 	}
-  .column-2 table {
+	.column-1 .image,
+	.column-1 .read-more {
+		padding: 0 15px 20px 15px;
+	}
+	.column-1 .image img {
+		max-width: 150px !important;
+	}
+	.column-2 table {
 		border-top: 1px solid #981e32;
 	}
-  .column-2 table td {
+	.column-2 table td {
 		padding: 20px 15px 0 15px;
 	}
 }
