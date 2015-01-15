@@ -13,7 +13,7 @@
 <?php wp_head();?>
 <script>
 var cahnrs_campaign = '<?php echo $CAHNRSWP_email->model->campaign ;?>';
-var cahnrs_source = '<?php echo $CAHNRSWP_email->model->title ;?>';
+var cahnrs_source = '<?php echo $CAHNRSWP_email->model->source ;?>';
 </script>
 </head>
 
