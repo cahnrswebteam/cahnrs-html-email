@@ -5,10 +5,23 @@
         <span class="cahnrs-lb-content" title="Get Code" style="display: none">
         	<h3>Email Header</h3>
         	<textarea id="email-header" >
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title><?php the_title();?></title><meta name="viewport" content="width=device-width, initial-scale=1.0"/></head><style>
-				<?php include CAHNRSWPEMAILDIR.'/theme-css/blank-white.php'; ?>
-                </style><body bgcolor="#cccccc" style="background-color: #cccccc; font-family: Verdana,sans-serif; font-size: 12px;">
-            </textarea>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title><?php the_title();?></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<style>
+<?php
+global $CAHNRSWP_email;
+$CAHNRSWP_email->controller->set_email( $post->ID );
+include CAHNRSWPEMAILDIR.'/theme-css/'.$CAHNRSWP_email->model->theme_style.'.php';
+?>
+
+</style>
+<body>
+					</textarea>
             <h3>Email Content</h3>
         	<textarea id="email-code" ></textarea>
             <h4>Email Footer</h4>
@@ -25,8 +38,9 @@ jQuery(document).ready( function( $ ) {
 		var email = $( '#email-code' ).val();
 		var type = $( this ).attr( 'class' );
 		var address = $( '#email-email' ).val();
+		var postid = '<?php echo $post->ID; ?>';
 		var service_url = '<?php echo get_site_url();?>/?send-email=true';
-		$.post( service_url, { em: email , ty: type , st: address } , function( data ) {
+		$.post( service_url, { em: email, ty: type, st: address, postid: postid }, function( data ) {
 				alert( data );
 			});
 	});
@@ -41,13 +55,9 @@ jQuery(document).ready( function( $ ) {
  * creating a new one.
 */
 if( typeof cahnrs_lb == 'undefined' ) {
-	
 	function init_cahnrs_lb() {
-		
 		this.content_parent = '.cahnrs-lb-content-parent';
-		
 		this.content_wrap = '.cahnrs-lb-content';
-		
 		var self = this;
 		
 		/**
@@ -55,20 +65,14 @@ if( typeof cahnrs_lb == 'undefined' ) {
 		 * well as all of the events.
 		*/
 		jQuery( document ).ready( function( $ ) {
-			
 			$( 'body' ).on( 'click' , '.show-lightbox-content' , function( e ) {
-				
 				if( $( this ).is( 'a' ) ) e.preventDefault(); // Stop default action for link
-				
 				var content = self.get_click_content( $( this )  );
-				
 				self.show_lb( content , false );
-				
 			}); // end on click .show-lightbox-content 
-			
-			
+
 		}); // end document ready
-		
+
 		/**
 		 * @desc Gets the content from a click/interacted item. 
 		 *
@@ -77,14 +81,10 @@ if( typeof cahnrs_lb == 'undefined' ) {
 		 * @return object The DOM ojbect containing the content
 		*/ 
 		self.get_click_content = function( item_interacted ){
-			
 			var content = item_interacted.parents( self.content_parent ).find( self.content_wrap );
-			
 			return content;
-			
 		}; //end set_lb_content()
-		
-		
+
 		/**
 		 * @desc Initiates display of the lightbox
 		 *
@@ -94,92 +94,54 @@ if( typeof cahnrs_lb == 'undefined' ) {
 		 * the case of content_item being a string.
 		*/
 		self.show_lb = function( content_item , title ){
-			
 			var content_type = jQuery.type( content_item );
-			
 			if( content_type === 'string' ) {
-				
 				content = content_item;
-				
 				if( !title ) {
-					
 					title = '';
-					
 				}; // end if
-				
 			} else {
-				
 				content_item.wrapInner( '<div class="cahnrs-dialog-content"></div>' )
-				
 				content = content_item.find( '.cahnrs-dialog-content');
-				
 				if( !title ) {
-					
 					title = content_item.attr( 'title' );
-					
 					if( 'undefined' === title ) {
-					
 						title = '';
-						
 					}; // end if
-					
 				}; // end if
-				
 			}; // end if
-			
-			
-			
+
 			jQuery( content ).dialog({
 				modal: true,
 				width: 700,
 				title: title,
 				buttons: {
 					Close: function() {
-						
 						/*if( content_type !== 'string' ){
-							
 							content_parent.find( self.content_wrap ).append( jQuery( this ).children() );
-							
 						}; // end if
-						
 						jQuery( this ).dialog( "close" );
-						
 						jQuery(this).dialog('destroy').remove();*/
-						
 						jQuery( this ).dialog( "close" );
-						
 				  	}
 				},
 				close: function(){ 
-				
 					self.close_lb( content_item , content_type , jQuery( this ) ) 
-				
 				}
 			}); // end .dialog*/
-			
 		} // end show_lb
 		
 		self.close_lb = function( content_item , content_type , lightbox ){
-		
 			var content_parent = content_item.parent();
-			
-			if( content_type !== 'string' ){
-								
-				content_parent.find( self.content_wrap ).append( lightbox.children() );
-								
-			}; // end if
-							
-			lightbox.dialog( "close" );
-							
+			if( content_type !== 'string' ){			
+				content_parent.find( self.content_wrap ).append( lightbox.children() );			
+			}; // end if	
+			lightbox.dialog( "close" );	
 			lightbox.dialog('destroy').remove();
-			
 		}
-		
 	} // end init_cahnrs_lb
-	
-	
-	
+
 	var cahnrs_lb = new init_cahnrs_lb();
-	
+
 } // end if cahnrs_lb
 </script>

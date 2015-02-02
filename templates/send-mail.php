@@ -3,9 +3,10 @@ class CAHNRSWPEMAIL_send_mail_init {
 	protected $ty;
 	protected $st;
 	protected $email_code;
-	
+	protected $post_id;
+
 	public function __construct(){
-		
+
 		add_filter( 'wp_mail_content_type', array( $this , 'set_html_content_type' ) );
 		
 		if( is_user_logged_in() && current_user_can( 'edit_posts' ) ) {
@@ -19,17 +20,18 @@ class CAHNRSWPEMAIL_send_mail_init {
 					 echo 'Error 02. Please try again.';
 				}
 				else if( !$_POST['st'] ) {
-					echo 'How about an email address to send to?';
+					echo 'Please enter an email address to send to.';
 				} else {
 					$this->email_code = $_POST['em'];
 					$this->ty = $_POST['ty'];
 					$this->st = $_POST['st'];
+					$this->post_id = $_POST['postid'];
 					$this->compose_email();
 					$this->send_mail();
 					echo 'Success! Your email has been sent.';
 				}
 			} else {
-				echo 'Don\'t seem to have all the right data. Please try agian.';
+				echo 'Don\'t seem to have all the right data. Please try again.';
 			}
 		} else {
 			echo 'Sorry, you don\'t have permissions to send emails.';
@@ -37,7 +39,7 @@ class CAHNRSWPEMAIL_send_mail_init {
 	}
 	
 	protected function send_mail(){
-		$subject = 'hello world';
+		$subject = html_entity_decode( get_the_title( $this->post_id ), ENT_QUOTES, 'UTF-8' );
 		$headers = 'From: CAHNRS Webteam <cahnrs.webteam@wsu.edu>' . "\r\n";
 		wp_mail( $this->st, $subject, $this->email_code, $headers );
 		remove_filter( 'wp_mail_content_type', array( $this , 'set_html_content_type' ) );
@@ -62,10 +64,12 @@ class CAHNRSWPEMAIL_send_mail_init {
 		$h .= '<meta name="viewport" content="width=device-width, initial-scale=1.0"/></head>';
 		$h .= '<style>';
 		ob_start();
-		include CAHNRSWPEMAILDIR.'/theme-css/blank-white.php';
+		global $CAHNRSWP_email;
+		$CAHNRSWP_email->controller->set_email( $this->post_id );
+		include CAHNRSWPEMAILDIR.'/theme-css/'.$CAHNRSWP_email->model->theme_style.'.php';
 		$h .= ob_get_clean();
 		$h .= '</style>';
-		$h .= '<body bgcolor="#cccccc" style="background-color: #cccccc; font-family: Verdana,sans-serif; font-size: 12px;">';
+		$h .= '<body>';
 		return $h;
 	}
 	
