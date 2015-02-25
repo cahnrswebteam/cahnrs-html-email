@@ -1,38 +1,30 @@
 <?php namespace cahnrswp\html;
 
 class init_html_email{
+
 	public $model;
 	public $controller;
 	public $view;
 
 	public function __construct(){
 
-		define( 'CAHNRSWPEMAILURL' , \get_stylesheet_directory_uri() ); // PLUGIN BASE URL
-		define( 'CAHNRSWPEMAILDIR' , \get_stylesheet_directory() ); // DIRECTORY PATH
+		define( 'CAHNRSWPEMAILURL', \get_stylesheet_directory_uri() ); // PLUGIN BASE URL
+		define( 'CAHNRSWPEMAILDIR', \get_stylesheet_directory() ); // DIRECTORY PATH
 
 		$this->model = new email_model;
 		$this->controller = new email_controller( $this->model );
-		$this->view = new email_view( $this->controller , $this->model );
+		$this->view = new email_view( $this->controller, $this->model );
 
-		\add_action( 'admin_menu', array( $this , 'remove_default_menu' ) );
-
+		\add_action( 'admin_menu', array( $this, 'remove_default_menu' ) );
 		\add_action( 'init', array( $this, 'register_post_type' ) );
-
 		\add_action( 'add_meta_boxes', array( $this, 'add_meta_box' ), 1 );
-
-		\add_action( 'admin_enqueue_scripts', array( $this , 'add_admin_scripts' ) );
-
-		\add_action( 'wp_enqueue_scripts', array( $this , 'add_public_scripts' ) );
-
+		\add_action( 'admin_enqueue_scripts', array( $this, 'add_admin_scripts' ) );
+		\add_action( 'wp_enqueue_scripts', array( $this, 'add_public_scripts' ) );
 		\add_action( 'save_post', array( $this, 'save' ) );
-
-		\add_filter( 'the_content', array( $this , 'import_content' ), 1 );
-
-		\add_filter( 'template_include', array( $this , 'send_email' ), 99 );
-
-		//\add_filter( 'the_title', array( $this , 'set_title' ), 1 );
-
-
+		\add_filter( 'the_content', array( $this, 'import_content' ), 1 );
+		\add_filter( 'template_include', array( $this, 'send_email' ), 99 );
+		//\add_filter( 'the_title', array( $this, 'set_title' ), 1 );
+		//\add_action( 'admin_head', array( $this, 'help_tab' ) );
 
 	}
 
@@ -71,12 +63,20 @@ class init_html_email{
 
 	public function add_meta_box( $post_type ){
 		add_meta_box(
-			'email-settings'
-			,__( 'Email Settings' )
-			,array( $this, 'add_metabox_content' )
-			,'email'
-			,'normal'
-			,'high'
+			'email-settings',
+			__( 'Email Settings' ),
+			array( $this, 'add_metabox_content' ),
+			'email',
+			'normal',
+			'high'
+		);
+		add_meta_box(
+			'email-help',
+			'HTML Email Help',
+			array( $this, 'help_metabox_content' ),
+			'email',
+			'side',
+			'default'
 		);
 	}
 
@@ -84,11 +84,23 @@ class init_html_email{
 		$this->controller->set_email( $post->ID );
 		$this->view->output_editor();
 	}
+	
+	public function help_metabox_content( $post ){
+		$this->controller->set_email( $post->ID );
+		$this->view->output_help();
+	}
 
-	public function add_admin_scripts(){
+	public function add_admin_scripts( $hook ){
 		\wp_enqueue_style( 'email-admin-css', \get_stylesheet_directory_uri().'/css/admin.css', array(), '0.0.1'  );
 		\wp_enqueue_script( 'email-admin-js', \get_stylesheet_directory_uri().'/js/admin.js', array(), '0.0.1'  );
 		\wp_enqueue_script( 'cycle2', \get_stylesheet_directory_uri().'/js/cycle2.js', array(), '0.0.1'  );
+
+		$screen = \get_current_screen();
+		if ( 'email' == $screen->post_type && ( $hook == 'post-new.php' || $hook == 'post.php' ) ) {
+			\wp_enqueue_style( 'email-help-css', \get_stylesheet_directory_uri().'/css/help.css', array() );
+			\wp_enqueue_script( 'email-help-js', \get_stylesheet_directory_uri().'/js/help.js', array() );
+		}
+
 	}
 
 	public function add_public_scripts(){
@@ -130,6 +142,7 @@ class init_html_email{
 		);
     	register_post_type( 'email', $args );
 	}
+
 }
 
 class email_model{
@@ -225,7 +238,7 @@ class email_view {
 	private $email_controller;
 	private $email_model;
 
-	public function __construct( $controller , $model ){
+	public function __construct( $controller, $model ){
 		$this->email_controller = $controller;
 		$this->email_model = $model;
 	}
@@ -234,6 +247,9 @@ class email_view {
 		include 'inc/editor.php';
 	}
 
+	public function output_help(){
+		include 'inc/help.php';
+	}
 
 }
 $CAHNRSWP_email = new init_html_email();

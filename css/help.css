@@ -1,0 +1,90 @@
+.help-content {
+	display: none;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	max-height: 80%;
+	position: fixed;
+	top: 10%;
+	width: 666px;
+	z-index: 160000;
+}
+.help-content.active-lb {
+	display: block;
+}
+.help-content .wrapper {
+	background: #fff;
+	border: 1px solid #eee;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+}
+.close-help {
+	color: #666;
+	display: block;
+	height: 21px;
+	position: absolute;
+	right: 9px;
+	text-align: center;
+	text-decoration: none;
+	top: 8px;
+	width: 21px;
+	z-index: 1000;
+}
+.close-help:before {
+	content: '\f158';
+	font: 400 20px/1 dashicons;
+	speak: none;
+	vertical-align: middle;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.close-help:hover {
+	color:#2ea2cc
+}
+#poststuff .help-content h3 {
+	border-bottom: 1px solid #eee;
+}
+.help-content .half {
+	float: left;
+	min-height: 26px;
+	width: 50%;
+}
+.help-content .half:last-of-type {
+	text-align: right;
+}
+.help-content:first-of-type .half .previous,
+.help-content:last-of-type .half .next {
+	display: none;
+}
+.help-content .half a {
+	color: #fff;
+	display: inline-block;
+	margin-top: 5px;
+	width: 30px;
+	height: 28px;
+	text-decoration: none;
+}
+.help-content .half a:hover {
+	color: #2ea2cc
+}
+.help-content .half a:before {
+	font: 400 30px/1 dashicons;
+	speak: none;
+	vertical-align: middle;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.half .previous:before {
+	content: "\f340";
+}
+.half .next:before {
+	content: "\f344";
+}
+.help-lb-bg {
+	background: rgba( 0, 0, 0, 0.7 );
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 159900;
+}
