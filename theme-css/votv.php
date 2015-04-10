@@ -116,6 +116,25 @@ h4 {
 	display: none;
 }
 
+/*
+ * Added by DB
+*/
+.feed td {
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+padding-left: 0px !important;
+padding-right: 0px !important;
+}
+
+.feed .feed-read-more {
+	background-color: #555555;
+}
+
+.feed .feed-read-more a {
+	color: #fff;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 480px) {
 	body {
 		width: 100% !important;
