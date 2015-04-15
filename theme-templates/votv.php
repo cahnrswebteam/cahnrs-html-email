@@ -41,6 +41,18 @@
 								endwhile;
 							endif;
 						?>
+            <table class="full-width" border="0" cellspacing="0" cellpadding="0" width="750" style="color:#5e6a71; font-family:'Lucida Grande','Lucida Sans Unicode',Arial,san-serif; width:750px;">
+              <tr>
+                <td class="full-width plugs" width="750" style="border-top:1px solid #b5babe; color:#5e6a71; font-family:'Lucida Grande','Lucida Sans Unicode',Arial,san-serif; padding: 10px 0; width:750px;">
+                	<p style="color: #5e6a71; margin: 10px 15px; padding: 0px; font-size: 12px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, san-serif;"><strong>Enjoy the other monthly newsletters from CAHNRS!</strong></p>
+									<p style="color: #5e6a71; margin: 10px 15px; padding: 0px; font-size: 12px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, san-serif;"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/chip-gt.jpg" width="30" height="30" alt="Green Times" style="float:left; margin-right:15px; height:30px; max-height:30px; max-width:30px; width:30px;" /><strong>WSU's Green Times</strong><br />
+									Organic agriculture and sustainable food systems. <a href="http://wsu.us5.list-manage2.com/subscribe?u=3cd4b2a328519c34e51f46c1d&id=114411b2ff">Subscribe here &raquo;</a></p>
+									<p style="color: #5e6a71; margin: 10px 15px; padding: 0px; font-size: 12px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, san-serif;"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/chip-osg.jpg" width="30" height="30" alt="On Solid Ground" style="float:left; margin-right:15px; height:30px; max-height:30px; max-width:30px; width:30px;" /><strong>WSU's On Solid Ground</strong><br />
+					  			Washington agriculture and natural resources. <a href="http://wsu.us5.list-manage.com/subscribe?u=3cd4b2a328519c34e51f46c1d&id=df0b077091">Subscribe here &raquo;</a></p>
+<p style="color: #5e6a71; margin: 10px 15px; padding: 0px; font-size: 12px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, san-serif;"><strong></a></p>
+                </td>
+              </tr>
+            </table>
 					</td>
 					<td class="shadow" width="1" style="background:#d2d5d7; border-left:1px solid #b5babe; border-right:1px solid #eff0f1; width:1px;"></td>
 				</tr>
@@ -49,8 +61,8 @@
 	</tr>
 	<tr>
 		<td bgcolor="#363637" width="100%" class="full-width" id="footer" style="background-color:#363637; font-size:13px; padding:10px 0 20px; text-align:center; width:100%;">
-			<span style="color:#fff; margin-bottom:10px;">If you have comments or questions about a story, please <a href="mailto:erika.holmes@wsu.edu" style="color:#fff;">contact us</a>. Thank you for reading <a href="http://cahnrs.wsu.edu/blog/category/voice-of-the-vine/" style="border-bottom:none; color:#b11730; text-decoration:none;">Voice of the Vine</a>.</span>
-			<span style="color:#b11730; margin-bottom: 3px;">CAHNRS Communications, Washington State University, Pullman, WA</span>
+			<span style="color:#fff; margin-bottom:10px;">If you have comments or questions about a story, please <a href="mailto:erika.holmes@wsu.edu" style="color:#fff;">contact us</a>. Thank you for reading <a href="http://cahnrs.wsu.edu/blog/category/voice-of-the-vine/" style="color:#fff;">Voice of the Vine</a>.</span>
+			<span style="color:#b5babe; margin-bottom: 3px;">CAHNRS Communications, Washington State University, Pullman, WA</span>
 			<span id="global-links" style="color:#b5babe;"><a href="http://access.wsu.edu/">Accessibility</a> | <a href="http://copyright.wsu.edu/">Copyright</a> | <a href="http://policies.wsu.edu/">Policies</a></span>
 		</td>
 	</tr>

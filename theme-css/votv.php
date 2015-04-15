@@ -30,9 +30,7 @@ body {
 	display: block;
 }
 #global-links a {
-	border-bottom: none;
 	color: #b5babe;
-	text-decoration: none;
 }
 img {
 	display: block;
@@ -53,6 +51,7 @@ img {
 }
 .column-1 .image {
 	padding: 0 20px 0 20px;
+  width: 150px;
 }
 .column-1 .content {
 	padding: 0 15px 0 20px;
@@ -75,6 +74,9 @@ img {
 	text-decoration: none;
 }
 
+.item.content_block td {
+	padding: 0 20px;
+}
 
 .column-2 table {
 	width: 207px;
@@ -100,7 +102,9 @@ h2,
 	text-transform: uppercase;
 }
 h2 a,
-.column-1 h3 a {
+.column-1 h3 a,
+.column-2 a,
+.plugs a {
 	color: #981e32;
 	text-decoration: none;
 }
@@ -167,15 +171,16 @@ padding-right: 0px !important;
 	}
 	.column-1 .image,
 	.column-1 .content,
-	.column-1 .read-more {
+	.column-1 .read-more,
+  .item.content_block td {
 		display: block;
 		height: auto !important;
-		padding: 0 15px 0 15px;
+		padding: 0 15px 0 15px !important;
 		width: auto !important;
 	}
 	.column-1 .image,
 	.column-1 .read-more {
-		padding: 0 15px 20px 15px;
+		padding: 0 15px 20px 15px !important;
 	}
 	.column-1 .image img {
 		max-width: 150px !important;
@@ -186,4 +191,5 @@ padding-right: 0px !important;
 	.column-2 table td {
 		padding: 20px 15px 0 15px;
 	}
+
 }
