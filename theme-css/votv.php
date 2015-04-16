@@ -36,13 +36,10 @@ img {
 	display: block;
 	max-width: 100%;
 }
-
 .row {
 	font-size: 14px;
-	margin-bottom: 20px;
 	width: 750px;
 }
-
 .column-1 {
 	border-right: 1px solid #b5babe;
 }
@@ -73,11 +70,9 @@ img {
 	padding: 5px 10px;
 	text-decoration: none;
 }
-
 .item.content_block td {
 	padding: 0 20px;
 }
-
 .column-2 table {
 	width: 207px;
 }
@@ -115,30 +110,9 @@ h4 {
 	color: #981e32;
 	font-size: 15px;
 }
-
 #row-200 {
 	display: none;
 }
-
-/*
- * Added by DB
-*/
-.feed td {
-padding-top: 0px !important;
-padding-bottom: 0px !important;
-padding-left: 0px !important;
-padding-right: 0px !important;
-}
-
-.feed .feed-read-more {
-	background-color: #555555;
-}
-
-.feed .feed-read-more a {
-	color: #fff;
-    text-decoration: none;
-}
-
 @media only screen and (max-width: 480px) {
 	body {
 		width: 100% !important;
@@ -185,11 +159,7 @@ padding-right: 0px !important;
 	.column-1 .image img {
 		max-width: 150px !important;
 	}
-	.column-2 table {
-		border-top: 1px solid #981e32;
-	}
 	.column-2 table td {
 		padding: 20px 15px 0 15px;
 	}
-
 }

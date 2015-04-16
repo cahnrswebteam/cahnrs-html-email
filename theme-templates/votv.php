@@ -4,8 +4,8 @@
 			<table align="center" border="0" cellspacing="0" cellpadding="0" width="750" class="full-width" style="width:750px;">
 				<tr>
 					<td height="190" valign="top" width="542" class="header full-width" style="color:#fff; vertical-align:top; width:542px;">
-						<span id="cahnrs-logo" style="font-size:10px;"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/ve-logo.png" width="319" height="75" alt="College of Agricultural, Human, and Natural Resource Sciences" style="height: 75px; max-width: 480px; width:319px;" /></span>
-						<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/votv-header.png" width="542" height="115" alt="Voice of the Vine" style="font-size:24px; height:115px; width:542px;" />
+						<span id="cahnrs-logo" style="font-size:10px;"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/vov-logo.png" width="319" height="75" alt="College of Agricultural, Human, and Natural Resource Sciences" style="height: 75px; max-width: 480px; width:319px;" /></span>
+						<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/vov-header.png" width="542" height="115" alt="Voice of the Vine" style="font-size:24px; height:115px; width:542px;" />
 					</td>
 					<td bgcolor="#363637" height="190" valign="top" width="208" class="full-width" style="background-color:#363637; vertical-align:top; width:208px;">
 						<div style="margin: 0 20px 20px 20px;">
@@ -41,15 +41,17 @@
 								endwhile;
 							endif;
 						?>
-            <table class="full-width" border="0" cellspacing="0" cellpadding="0" width="750" style="color:#5e6a71; font-family:'Lucida Grande','Lucida Sans Unicode',Arial,san-serif; width:750px;">
+            <table class="full-width" border="0" cellspacing="0" cellpadding="0" width="750" style="width:750px;">
               <tr>
-                <td class="full-width plugs" width="750" style="border-top:1px solid #b5babe; color:#5e6a71; font-family:'Lucida Grande','Lucida Sans Unicode',Arial,san-serif; padding: 10px 0; width:750px;">
-                	<p style="color: #5e6a71; margin: 10px 15px; padding: 0px; font-size: 12px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, san-serif;"><strong>Enjoy the other monthly newsletters from CAHNRS!</strong></p>
+                <td bgcolor="#d7dadb" class="full-width plugs" width="750" style="background-color:#d7dadb; border-top:1px solid #b5babe; color:#5e6a71; font-family:'Lucida Grande','Lucida Sans Unicode',Arial,san-serif; padding: 10px 0; width:750px;">
+                	<p style="color: #5e6a71; margin: 10px 15px; padding: 0px; font-size: 12px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, san-serif;"><strong>Enjoy all three monthly newsletters from CAHNRS!</strong></p>
 									<p style="color: #5e6a71; margin: 10px 15px; padding: 0px; font-size: 12px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, san-serif;"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/chip-gt.jpg" width="30" height="30" alt="Green Times" style="float:left; margin-right:15px; height:30px; max-height:30px; max-width:30px; width:30px;" /><strong>WSU's Green Times</strong><br />
 									Organic agriculture and sustainable food systems. <a href="http://wsu.us5.list-manage2.com/subscribe?u=3cd4b2a328519c34e51f46c1d&id=114411b2ff">Subscribe here &raquo;</a></p>
 									<p style="color: #5e6a71; margin: 10px 15px; padding: 0px; font-size: 12px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, san-serif;"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/chip-osg.jpg" width="30" height="30" alt="On Solid Ground" style="float:left; margin-right:15px; height:30px; max-height:30px; max-width:30px; width:30px;" /><strong>WSU's On Solid Ground</strong><br />
 					  			Washington agriculture and natural resources. <a href="http://wsu.us5.list-manage.com/subscribe?u=3cd4b2a328519c34e51f46c1d&id=df0b077091">Subscribe here &raquo;</a></p>
-<p style="color: #5e6a71; margin: 10px 15px; padding: 0px; font-size: 12px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, san-serif;"><strong></a></p>
+									<p style="color: #5e6a71; margin: 10px 15px; padding: 0px; font-size: 12px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, san-serif;"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/chip-vov.jpg" width="30" height="30" alt="Voice of the Vine" style="float:left; margin-right:15px; height:30px; max-height:30px; max-width:30px; width:30px;" /><strong>WSU's Voice of the Vine</strong><br>
+									Viticulture and enology for Washington's world-class wine industry. <a href="http://wsu.us5.list-manage.com/subscribe?u=3cd4b2a328519c34e51f46c1d&id=a3e4964764">Subscribe here &raquo;</a></p>
+			
                 </td>
               </tr>
             </table>
