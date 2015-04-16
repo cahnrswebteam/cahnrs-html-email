@@ -150,6 +150,7 @@ class email_model{
 		'cahnrs-news' => array('name' => 'CAHNRS News' ),
 		'hd' => array( 'name' => 'HD Newsletter', 'css' => 'hd' ),
 		'votv' => array( 'name' => 'Voice of the Vine', 'css' => 'votv' ),
+		'gt' => array( 'name' => 'Green Times', 'css' => 'gt' ),
 		'research-conversations' => array( 'name' => 'Research Conversations', 'css' => 'research-conversations' ),
 		'empty1' => array( 'name' => 'Not Set' ),
 	);
