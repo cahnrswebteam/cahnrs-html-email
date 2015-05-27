@@ -45,12 +45,12 @@
               <tr>
                 <td bgcolor="#d7dadb" class="full-width plugs" width="750" style="background-color:#d7dadb; border-top:1px solid #b5babe; color:#5e6a71; font-family:'Lucida Grande','Lucida Sans Unicode',Arial,san-serif; padding: 10px 0; width:750px;">
                 	<p style="color: #5e6a71; margin: 10px 15px; padding: 0px; font-size: 12px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, san-serif;"><strong>Enjoy all three monthly newsletters from CAHNRS!</strong></p>
-									<p style="color: #5e6a71; margin: 10px 15px; padding: 0px; font-size: 12px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, san-serif;"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/chip-gt.jpg" width="30" height="30" alt="Green Times" style="float:left; margin-right:15px; height:30px; max-height:30px; max-width:30px; width:30px;" /><strong>WSU's Green Times</strong><br />
-									Organic agriculture and sustainable food systems. <a href="http://wsu.us5.list-manage2.com/subscribe?u=3cd4b2a328519c34e51f46c1d&id=114411b2ff">Subscribe here &raquo;</a></p>
-									<p style="color: #5e6a71; margin: 10px 15px; padding: 0px; font-size: 12px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, san-serif;"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/chip-osg.jpg" width="30" height="30" alt="On Solid Ground" style="float:left; margin-right:15px; height:30px; max-height:30px; max-width:30px; width:30px;" /><strong>WSU's On Solid Ground</strong><br />
-					  			Washington agriculture and natural resources. <a href="http://wsu.us5.list-manage.com/subscribe?u=3cd4b2a328519c34e51f46c1d&id=df0b077091">Subscribe here &raquo;</a></p>
-									<p style="color: #5e6a71; margin: 10px 15px; padding: 0px; font-size: 12px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, san-serif;"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/chip-vov.jpg" width="30" height="30" alt="Voice of the Vine" style="float:left; margin-right:15px; height:30px; max-height:30px; max-width:30px; width:30px;" /><strong>WSU's Voice of the Vine</strong><br>
-									Viticulture and enology for Washington's world-class wine industry. <a href="http://wsu.us5.list-manage.com/subscribe?u=3cd4b2a328519c34e51f46c1d&id=a3e4964764">Subscribe here &raquo;</a></p>
+									<p style="color: #5e6a71; margin: 10px 15px; padding: 0px; font-size: 12px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, san-serif;"><strong>WSU's Green Times</strong><br />
+									Organic agriculture and sustainable food systems. <a href="http://wsu.us5.list-manage2.com/subscribe?u=3cd4b2a328519c34e51f46c1d&id=114411b2ff" style="color:#981e32;"><span style="color:#981e32;">Subscribe here &raquo;</span></a></p>
+									<p style="color: #5e6a71; margin: 10px 15px; padding: 0px; font-size: 12px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, san-serif;"><strong>WSU's On Solid Ground</strong><br />
+					  			Washington agriculture and natural resources. <a href="http://wsu.us5.list-manage.com/subscribe?u=3cd4b2a328519c34e51f46c1d&id=df0b077091" style="color:#981e32;"><span style="color:#981e32;">Subscribe here &raquo;</span></a></p>
+									<p style="color: #5e6a71; margin: 10px 15px; padding: 0px; font-size: 12px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, san-serif;"><strong>WSU's Voice of the Vine</strong><br>
+									Viticulture and enology for Washington's world-class wine industry. <a href="http://wsu.us5.list-manage.com/subscribe?u=3cd4b2a328519c34e51f46c1d&id=a3e4964764" style="color:#981e32;"><span style="color:#981e32;">Subscribe here &raquo;</span></a></p>
 			
                 </td>
               </tr>

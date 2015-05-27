@@ -72,9 +72,9 @@ jQuery(document).ready( function($){
 			};
 			
 			c.inilne_css = function(){
-				var tags = 'tr,td,h1,h2,h3,h4,h5,tr,td,table,p,ul,li';
+				var tags = 'tr,td,h1,h2,h3,h4,h5,tr,td,table,p,ul,li,span,a,div';
 				tags = tags.split(',');
-				var css = 'padding-top,padding-bottom,padding-left,padding-right,font-size,color,font-family,background-color'
+				var css = 'padding-top,padding-bottom,padding-left,padding-right,font-size,color,font-family,background-color,display,border-bottom,border-top,border-left,border-right,table-layout'
 				var css = css.split(',');
 				for( var i = 0; i < tags.length; i++ ){
 					$( tags[i] ).each( function(){

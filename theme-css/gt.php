@@ -74,7 +74,7 @@ img {
 	text-decoration: none;
 }
 
-.item.content_block td {
+.column-2 .item.content_block td {
 	padding: 0 20px;
 }
 
@@ -100,6 +100,9 @@ h2,
 	font-size: 18px;
 	font-weight: normal;
 	text-transform: uppercase;
+}
+a {
+	text-decoration: none;
 }
 h2 a,
 .column-1 h3 a,

@@ -24,6 +24,7 @@ class init_html_email{
 		\add_filter( 'the_content', array( $this, 'import_content' ), 1 );
 		\add_filter( 'template_include', array( $this, 'send_email' ), 99 );
 		//\add_filter( 'the_title', array( $this, 'set_title' ), 1 );
+		//\add_action( 'admin_head', array( $this, 'help_tab' ) );
 
 	}
 
@@ -151,6 +152,7 @@ class email_model{
 		'hd' => array( 'name' => 'HD Newsletter', 'css' => 'hd' ),
 		'votv' => array( 'name' => 'Voice of the Vine', 'css' => 'votv' ),
 		'gt' => array( 'name' => 'Green Times', 'css' => 'gt' ),
+		'osg' => array( 'name' => 'On Solid Ground', 'css' => 'osg' ),
 		'research-conversations' => array( 'name' => 'Research Conversations', 'css' => 'research-conversations' ),
 		'empty1' => array( 'name' => 'Not Set' ),
 	);
