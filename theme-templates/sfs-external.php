@@ -3,7 +3,7 @@
     <td align="center">
 			<table align="center" width="750" border="0" cellspacing="0" cellpadding="0" class="full-width" style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, san-serif;">
         <tr>
-          <td width="230" bgcolor="#363637/" height="230" class="full-width" style="color: #fff; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, san-serif; font-size: 18px;"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/sfs-external-header.gif" width="230" height="230" alt="School of Food Science" style="display: block; height: 230px; max-width: 660px; width: 230px;" /></td>
+          <td width="230" bgcolor="#363637" height="230" class="full-width" style="color: #fff; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, san-serif; font-size: 18px;"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/theme-images/sfs-external-header.gif" width="230" height="230" alt="School of Food Science" style="display: block; height: 230px; max-width: 660px; width: 230px;" /></td>
           <td width="500" bgcolor="#363637" height="230" class="full-width">
           	<img src="<?php echo $CAHNRSWP_email->model->banner_img; ?>" width="500" height="230" alt="" style="display: block; height: 230px; max-width:500px; width: 500px;" />
           </td>
