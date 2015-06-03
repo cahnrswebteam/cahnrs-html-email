@@ -154,8 +154,8 @@ class email_model{
 		'gt' => array( 'name' => 'Green Times', 'css' => 'gt' ),
 		'osg' => array( 'name' => 'On Solid Ground', 'css' => 'osg' ),
 		'research-conversations' => array( 'name' => 'Research Conversations', 'css' => 'research-conversations' ),
-		'sfs-internal' => array( 'name' => 'SFS Internal', 'css' => 'sfs-internal', 'supports' => array( 'banner' ) ),
-		'sfs-external' => array( 'name' => 'SFS External', 'css' => 'sfs-external', 'supports' => array( 'banner' ) ),
+		'sfs-internal' => array( 'name' => 'SFS Internal', 'css' => 'sfs', 'supports' => array( 'banner' ) ),
+		'sfs-external' => array( 'name' => 'SFS External', 'css' => 'sfs', 'supports' => array( 'banner' ) ),
 		'empty1' => array( 'name' => 'Not Set' ),
 	);
 	public $dir;
