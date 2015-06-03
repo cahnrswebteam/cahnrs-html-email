@@ -13,6 +13,7 @@ p {
   margin: 0 0 1em;
 }
 a.no-underline {
+	outline: none;
 	text-decoration: none !important;
 }
 
