@@ -52,26 +52,30 @@ p {
 	color: #5e6a71;
 	font-size: 14px;
 	line-height: 20px;
+	margin: 1em 0;
 }
-.row a {
+a {
 	color: #981e32;
 	font-weight: bold;
 	outline: none;
 	text-decoration: none;
 }
-.row .gold a {
+.gold a {
 	color: #8d7442;
 }
-.row a.more {
+a.more {
 	background-color: #4e5153;
+	border-top: 5px solid #4e5153;
+	border-bottom: 5px solid #4e5153;
+	border-left: 10px solid #4e5153;
+	border-right: 10px solid #4e5153;
 	color: #fff;
 	font-weight: normal;
 	outline: none;
-	padding: 5px 10px;
 	text-decoration: none;
 	text-transform: uppercase;
 }
-.column-2 hr {
+hr {
 	border: 1px solid #b9bec2;
 	height: 0;
 	width: 60%;
