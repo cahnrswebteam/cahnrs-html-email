@@ -1,10 +1,7 @@
-/* template */
 body {
-	background-color: #000;
 	margin: 0;
 	padding: 0;
 }
-/* builder - layout */
 .row {
 	width: 100% !important;
 }
@@ -16,7 +13,6 @@ body {
 }
 .pagebuilder-layout-aside .column-1 {
 	padding: 0 10px 0 0 !important;
-	text-align: left;
 	width: 485px !important;
 }
 .pagebuilder-layout-aside .column-1 table td {
@@ -25,7 +21,6 @@ body {
 .pagebuilder-layout-aside .column-2 {
 	background: #e5e7e9;
 	padding: 10px !important;
-	text-align: left;
 	width: 235px !important;
 }
 .gold {
@@ -35,10 +30,9 @@ td br:first-child,
 #row-200 {
 	display: none;
 }
-/* fonts */
 h1 {
 	color: #5e6a71;
-  margin-top: 0;
+	margin-top: 0;
 }
 h2 {
 	color: #a8905f;
@@ -81,7 +75,6 @@ hr {
 	width: 60%;
 }
 @media only screen and (max-width: 480px) {
-	/* template */
 	img {
 		height: auto !important;
 		width: 100% !important;
@@ -94,7 +87,6 @@ hr {
 	.hide {
 		display: none;
 	}
-	/* builder */
 	.pagebuilder-layout-aside .column-1 {
 		display: block !important;
 		padding: 0 !important;
