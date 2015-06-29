@@ -23,8 +23,8 @@ body {
 	padding: 10px !important;
 	width: 235px !important;
 }
-.gold {
-	background-color: #f0e7d3 !important;
+.gold td {
+	background-color: #f0e7d3;
 }
 td br:first-child,
 #row-200 {
