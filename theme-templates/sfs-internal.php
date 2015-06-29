@@ -3,8 +3,8 @@
 		<td bgcolor="#000000">
 			<table align="center" border="0" cellpadding="0" cellspacing="0" width="750" class="full-width">
 				<tr>
-					<td bgcolor="#000000" valign="top" width="750" class="full-width" style="color:#fff; font-family: Lucida Grande, Lucida Sans Unicode, Arial, san-serif; font-size: 14px;">
-						<span style="font-family: Lucida Grande, Lucida Sans Unicode, Arial, san-serif;"><img src="<?php echo $CAHNRSWP_email->model->banner_img; ?>" width="750" alt="School of Food Science Update" style="display: block; font-family: Lucida Grande, Lucida Sans Unicode, Arial, san-serif; font-size: 20px; max-width: 750px; width: 750px;" /></span>
+					<td bgcolor="#000000" valign="top" width="750" class="full-width" style="font-family: Lucida Grande, Lucida Sans Unicode, Arial, san-serif; font-size: 14px;">
+						<a href="http://sfs.wsu.edu/" style="color: #fff; font-family: Lucida Grande, Lucida Sans Unicode, Arial, san-serif; text-decoration: none; outline: none;" title="School of Food Science UI WSU"><img src="<?php echo $CAHNRSWP_email->model->banner_img; ?>" width="750" alt="School of Food Science Update" style="display: block; font-family: Lucida Grande, Lucida Sans Unicode, Arial, san-serif; font-size: 20px; max-width: 750px; width: 750px;" /></a>
 					</td>
 				</tr>
 			</table>
