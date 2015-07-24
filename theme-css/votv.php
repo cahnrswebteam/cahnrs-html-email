@@ -54,8 +54,10 @@ td.promo.content,
 td.promo.image {
 	padding-top: 20px;
 }
-.column-1 .item:first-of-type > tbody > tr:first-child > td.promo.content,
-.column-1 .item:first-of-type > tbody > tr:first-child > td.promo.image {
+.column-1 > .item:first-of-type > tbody > tr:first-child > td.promo.content,
+.column-1 > .item:first-of-type > tbody > tr:first-child > td.promo.image,
+.column-1 > .item:first-of-type > tbody > tr > td > .item:first-of-type > tbody > tr:first-child > td.promo.content,
+.column-1 > .item:first-of-type > tbody > tr > td > .item:first-of-type > tbody > tr:first-child > td.promo.image {
 	padding-top: 0;
 }
 td.feed.promo.image img {
